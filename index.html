@@ -1,0 +1,1422 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- ============ SEO ============ -->
+  <title>Saloon Cadde Urla | Gelin Saçı, Makyaj & Güzellik Salonu — İzmir Urla</title>
+  <meta name="description" content="Urla'nın merkezinde gelin saçı ve makyajı, saç kesim & boya, keratin/Brezilya fönü, manikür, kalıcı oje, kalıcı makyaj ve ipek kirpik. 4,9 ★ memnuniyet. WhatsApp'tan kolay randevu." />
+  <meta name="keywords" content="Urla kuaför, Urla gelin saçı, Urla gelin makyajı, İzmir Urla güzellik salonu, Urla saç boyası, Urla keratin, Urla manikür kalıcı oje, Urla kalıcı makyaj, Saloon Cadde, Cadde Kuaför" />
+  <meta name="robots" content="index, follow" />
+  <meta name="theme-color" content="#F7F5F2" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Saloon Cadde Urla | Gelin & Güzellik Salonu" />
+  <meta property="og:description" content="Urla'da gelin saçı & makyajı, saç bakımı, tırnak ve güzellik hizmetleri. Kişiye özel, hijyenik ve profesyonel. WhatsApp ile hızlı randevu." />
+  <meta property="og:locale" content="tr_TR" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&family=Parisienne&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Local Business structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "HairSalon",
+    "name": "Saloon Cadde",
+    "alternateName": "Cadde Kuaför",
+    "description": "Urla / İzmir'de gelin saçı ve makyajı, saç bakımı, tırnak ve güzellik hizmetleri sunan profesyonel kuaför ve güzellik salonu.",
+    "areaServed": ["Urla", "İzmir"],
+    "telephone": "+905062817311",
+    "priceRange": "₺₺",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Yelaltı Mah. 75. Yıl Cumhuriyet Cad. No:56/B",
+      "addressLocality": "Urla",
+      "addressRegion": "İzmir",
+      "postalCode": "35430",
+      "addressCountry": "TR"
+    },
+    "openingHoursSpecification": [{
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
+      "opens": "08:00",
+      "closes": "20:00"
+    }],
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.9",
+      "reviewCount": "180"
+    }
+  }
+  </script>
+
+  <style>
+    /* ============================================================
+       SALOON CADDE — URLA · Monokrom Premium Salon Landing (Demo)
+       Marka kimliği: siyah-beyaz, script + bold caps + kadın profili.
+       ============================================================ */
+
+    :root{
+      /* Palette — siyah & beyaz (logoya sadık monokrom, sıcak nötr) */
+      --ivory:        #F7F5F2;  /* ana arka plan (kırık beyaz) */
+      --blush:        #EFEAE4;  /* ikincil arka plan (sıcak açık gri) */
+      --noir:         #15120F;  /* ana metin / siyah */
+      --gold:         #211C18;  /* "primary" — koyu antrasit (vurgu) */
+      --gold-deep:    #000000;  /* tam siyah */
+      --rose:         #8C8175;  /* greige — yumuşak ikincil aksan */
+      --card:         #FFFFFF;  /* kart zemini */
+      --line:         #E6E0D8;  /* border / çizgi */
+      --noir-60:      rgba(21,18,15,.62);
+      --noir-45:      rgba(21,18,15,.45);
+
+      /* Type */
+      --serif:  'Playfair Display', Georgia, serif;
+      --script: 'Parisienne', cursive;
+      --sans:   'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+
+      /* Spacing & misc */
+      --container: 1200px;
+      --radius:    22px;
+      --radius-sm: 14px;
+      --shadow-sm: 0 4px 18px rgba(21,18,15,.06);
+      --shadow-md: 0 18px 50px rgba(21,18,15,.12);
+      --shadow-lg: 0 30px 80px rgba(21,18,15,.18);
+      --ease: cubic-bezier(.22,.61,.36,1);
+    }
+
+    *,*::before,*::after{ box-sizing:border-box; margin:0; padding:0; }
+
+    html{ scroll-behavior:smooth; -webkit-text-size-adjust:100%; }
+
+    body{
+      font-family: var(--sans);
+      color: var(--noir);
+      background: var(--ivory);
+      line-height: 1.65;
+      font-size: 16px;
+      overflow-x: hidden;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    h1,h2,h3,h4{ font-family: var(--serif); font-weight:600; line-height:1.12; letter-spacing:-.01em; }
+
+    a{ color:inherit; text-decoration:none; }
+    img{ max-width:100%; display:block; }
+    ul{ list-style:none; }
+
+    .container{ width:100%; max-width:var(--container); margin:0 auto; padding:0 22px; }
+
+    section{ position:relative; }
+
+    .eyebrow{
+      font-family:var(--sans);
+      font-size:.72rem;
+      font-weight:600;
+      letter-spacing:.26em;
+      text-transform:uppercase;
+      color:var(--noir);
+      display:inline-flex;
+      align-items:center;
+      gap:.6em;
+    }
+    .eyebrow::before{ content:""; width:26px; height:1px; background:var(--noir); display:inline-block; }
+
+    .section-head{ max-width:680px; margin:0 auto 48px; text-align:center; }
+    .section-head .eyebrow::before{ display:none; }
+    .section-head h2{ font-size:clamp(1.9rem,4.4vw,3rem); margin:14px 0 16px; }
+    .section-head p{ color:var(--noir-60); font-size:1.04rem; }
+
+    /* ---------- Brand logo lockup ---------- */
+    .logo{ display:flex; align-items:center; gap:12px; }
+    .logo .lk{ display:flex; flex-direction:column; line-height:.86; }
+    .logo .scr{ font-family:var(--script); font-size:1.45rem; letter-spacing:.01em; transform:translateX(2px); }
+    .logo .cadde{ font-family:var(--sans); font-weight:800; font-size:.78rem; letter-spacing:.42em; text-transform:uppercase; margin-top:3px; }
+    .logo .cadde-face{ width:34px; height:auto; flex:none; }
+    .logo.sm .scr{ font-size:1.3rem; }
+    .logo.sm .cadde{ font-size:.66rem; letter-spacing:.4em; }
+    .logo.sm .cadde-face{ width:30px; }
+    .logo.lg .scr{ font-size:3.1rem; }
+    .logo.lg .cadde{ font-size:1.4rem; letter-spacing:.5em; margin-top:8px; }
+    .logo.lg .cadde-face{ width:74px; }
+
+    /* ---------- Buttons ---------- */
+    .btn{
+      display:inline-flex; align-items:center; justify-content:center; gap:.55em;
+      font-family:var(--sans); font-weight:600; font-size:.96rem;
+      padding:15px 26px; border-radius:999px; cursor:pointer; border:1px solid transparent;
+      transition: transform .35s var(--ease), box-shadow .35s var(--ease), background .3s, color .3s;
+      white-space:nowrap;
+    }
+    .btn svg{ width:18px; height:18px; flex:none; }
+    .btn-primary{
+      background:linear-gradient(135deg,var(--gold) 0%, var(--gold-deep) 100%);
+      color:#fff; box-shadow:0 10px 26px rgba(21,18,15,.28);
+    }
+    .btn-primary:hover{ transform:translateY(-3px); box-shadow:0 16px 34px rgba(21,18,15,.38); }
+    .btn-secondary{
+      background:transparent; color:var(--noir); border-color:rgba(21,18,15,.28);
+    }
+    .btn-secondary:hover{ border-color:var(--noir); background:var(--noir); color:#fff; transform:translateY(-3px); }
+    .btn-ghost{ background:var(--card); color:var(--noir); border-color:var(--line); box-shadow:var(--shadow-sm); }
+    .btn-ghost:hover{ border-color:var(--noir); color:var(--noir); }
+    .btn-block{ width:100%; }
+
+    .wa-ico{ width:18px; height:18px; }
+
+    /* ============================================================
+       HEADER
+       ============================================================ */
+    .header{
+      position:fixed; top:0; left:0; right:0; z-index:100;
+      transition: background .4s var(--ease), box-shadow .4s var(--ease), padding .4s var(--ease);
+      padding:18px 0;
+    }
+    .header.scrolled{
+      background:rgba(247,245,242,.85);
+      backdrop-filter:blur(14px); -webkit-backdrop-filter:blur(14px);
+      box-shadow:0 1px 0 var(--line), 0 8px 30px rgba(21,18,15,.05);
+      padding:12px 0;
+    }
+    .nav{ display:flex; align-items:center; justify-content:space-between; gap:20px; }
+
+    .nav-links{ display:none; align-items:center; gap:30px; }
+    .nav-links a{ font-size:.92rem; font-weight:500; color:var(--noir); position:relative; transition:color .25s; }
+    .nav-links a::after{ content:""; position:absolute; left:0; bottom:-6px; width:0; height:1.5px; background:var(--noir); transition:width .3s var(--ease); }
+    .nav-links a:hover{ color:var(--noir); }
+    .nav-links a:hover::after{ width:100%; }
+
+    .nav-cta{ display:none; }
+
+    .hamburger{
+      display:inline-flex; flex-direction:column; gap:5px; background:none; border:0; cursor:pointer; padding:8px;
+    }
+    .hamburger span{ width:24px; height:2px; background:var(--noir); border-radius:2px; transition:transform .3s, opacity .3s; }
+    .hamburger.open span:nth-child(1){ transform:translateY(7px) rotate(45deg); }
+    .hamburger.open span:nth-child(2){ opacity:0; }
+    .hamburger.open span:nth-child(3){ transform:translateY(-7px) rotate(-45deg); }
+
+    /* Mobile drawer */
+    .mobile-menu{
+      position:fixed; inset:0 0 0 auto; width:min(82%,340px); z-index:99;
+      background:var(--ivory); box-shadow:var(--shadow-lg);
+      transform:translateX(100%); transition:transform .45s var(--ease);
+      padding:96px 30px 30px; display:flex; flex-direction:column; gap:6px;
+    }
+    .mobile-menu.open{ transform:translateX(0); }
+    .mobile-menu a{ padding:14px 0; font-size:1.05rem; font-weight:500; border-bottom:1px solid var(--line); }
+    .mobile-menu .btn{ margin-top:22px; }
+    .overlay{ position:fixed; inset:0; background:rgba(21,18,15,.45); z-index:98; opacity:0; visibility:hidden; transition:opacity .4s; }
+    .overlay.open{ opacity:1; visibility:visible; }
+
+    /* ============================================================
+       HERO
+       ============================================================ */
+    .hero{
+      position:relative; padding:120px 0 70px; overflow:hidden;
+      background:
+        radial-gradient(1100px 620px at 78% 18%, rgba(21,18,15,.06), transparent 60%),
+        radial-gradient(900px 600px at 10% 90%, rgba(21,18,15,.04), transparent 55%),
+        linear-gradient(180deg, var(--ivory) 0%, #FBFAF8 100%);
+    }
+    .hero-lines{ position:absolute; inset:0; z-index:0; opacity:.5; pointer-events:none; }
+    .hero-lines svg{ width:140%; height:100%; }
+    .hero-lines path{ animation: drift 26s ease-in-out infinite alternate; }
+    @keyframes drift{ from{ transform:translateX(0); } to{ transform:translateX(-40px); } }
+
+    .hero-inner{ position:relative; z-index:2; display:grid; grid-template-columns:1fr; gap:48px; align-items:center; }
+
+    .hero-copy .eyebrow{ margin-bottom:20px; }
+    .hero h1{ font-size:clamp(2.3rem,7vw,3.7rem); }
+    .hero .h1-sub{
+      font-family:var(--script); font-weight:400;
+      font-size:clamp(1.6rem,4.6vw,2.3rem); color:var(--noir); margin-top:14px; line-height:1.2;
+    }
+    .hero p.lead{ color:var(--noir-60); font-size:1.06rem; margin:20px 0 30px; max-width:560px; }
+    .hero-ctas{ display:flex; flex-wrap:wrap; gap:14px; }
+
+    .hero-badges{
+      display:grid; grid-template-columns:1fr 1fr; gap:14px 20px; margin-top:36px; max-width:560px;
+    }
+    .hero-badge{ display:flex; align-items:center; gap:11px; font-size:.9rem; font-weight:500; }
+    .hero-badge .ic{
+      width:34px; height:34px; flex:none; border-radius:50%;
+      display:grid; place-items:center; background:rgba(21,18,15,.06); color:var(--noir);
+    }
+    .hero-badge .ic svg{ width:17px; height:17px; }
+
+    /* Hero visual — marka kartı (siyah panel, görsel bağımsız) */
+    .hero-visual{ position:relative; }
+    .hero-visual .glow{
+      position:absolute; inset:auto -8% -10% -8%; height:75%; z-index:0;
+      background:radial-gradient(60% 60% at 50% 50%, rgba(21,18,15,.16), transparent 70%);
+      filter:blur(46px);
+    }
+    .showcase{
+      position:relative; z-index:2; border-radius:var(--radius); overflow:hidden;
+      box-shadow:var(--shadow-lg); border:1px solid rgba(21,18,15,.6);
+      aspect-ratio:4/5;
+      background:
+        radial-gradient(120% 90% at 50% 0%, rgba(255,255,255,.10), transparent 55%),
+        linear-gradient(155deg,#2a2521 0%, #15120F 60%, #000 100%);
+      display:grid; place-items:center; text-align:center; padding:34px; color:#fff;
+    }
+    .showcase::after{
+      content:""; position:absolute; inset:0;
+      background:repeating-linear-gradient(115deg, rgba(255,255,255,.04) 0 2px, transparent 2px 12px);
+      pointer-events:none;
+    }
+    .showcase-inner{ position:relative; z-index:2; }
+    .showcase .logo{ flex-direction:column; gap:14px; color:#fff; }
+    .showcase .sc-line{ width:54px; height:1px; background:rgba(255,255,255,.4); margin:20px auto 16px; }
+    .showcase .sc-sub{ font-size:.66rem; letter-spacing:.4em; text-transform:uppercase; color:rgba(255,255,255,.7); }
+    .showcase .sc-tagline{ font-family:var(--serif); font-style:italic; font-size:1.05rem; color:rgba(255,255,255,.92); margin-top:8px; }
+
+    .tag-float{
+      position:absolute; z-index:4; top:16px; left:16px;
+      background:#fff; padding:8px 14px; border-radius:999px; font-size:.74rem; font-weight:600;
+      letter-spacing:.02em; color:var(--noir); box-shadow:var(--shadow-sm);
+      display:flex; align-items:center; gap:7px;
+    }
+    .tag-float svg{ width:14px; height:14px; color:var(--noir); }
+
+    .info-card{
+      position:relative; z-index:3; margin:-26px 18px 0; padding:16px 18px;
+      background:var(--card); border:1px solid var(--line); border-radius:var(--radius-sm);
+      box-shadow:var(--shadow-md); display:flex; align-items:center; gap:14px;
+    }
+    .info-card .swatches{ display:flex; }
+    .info-card .swatches span{ width:22px; height:22px; border-radius:50%; border:2px solid #fff; margin-left:-7px; box-shadow:0 1px 3px rgba(0,0,0,.12); }
+    .info-card .swatches span:first-child{ margin-left:0; }
+    .info-card .txt small{ display:block; font-size:.7rem; letter-spacing:.16em; text-transform:uppercase; color:var(--noir-60); font-weight:600; }
+    .info-card .txt strong{ font-weight:600; font-size:.92rem; }
+
+    /* ============================================================
+       SOCIAL PROOF STRIP
+       ============================================================ */
+    .proof{ border-top:1px solid var(--line); border-bottom:1px solid var(--line); background:var(--card); }
+    .proof .container{ display:flex; flex-wrap:wrap; align-items:center; justify-content:center; gap:14px 30px; padding-top:22px; padding-bottom:22px; }
+    .proof .chip{ display:flex; align-items:center; gap:9px; font-size:.9rem; font-weight:500; color:var(--noir); }
+    .proof .chip svg{ width:16px; height:16px; color:var(--noir); flex:none; }
+    .proof .stars{ color:var(--noir); letter-spacing:1px; }
+    .proof .sep{ width:5px; height:5px; border-radius:50%; background:var(--line); }
+
+    /* ============================================================
+       Generic section padding
+       ============================================================ */
+    .pad{ padding:84px 0; }
+    .pad-sm{ padding:64px 0; }
+
+    /* ---------- Problem / Desire ---------- */
+    .problem{ background:var(--ivory); }
+    .cards-3{ display:grid; grid-template-columns:1fr; gap:22px; margin-top:46px; }
+    .mini-card{
+      background:var(--card); border:1px solid var(--line); border-radius:var(--radius-sm);
+      padding:30px 26px; box-shadow:var(--shadow-sm); transition:transform .4s var(--ease), box-shadow .4s var(--ease);
+    }
+    .mini-card:hover{ transform:translateY(-5px); box-shadow:var(--shadow-md); }
+    .mini-card .ic{
+      width:48px; height:48px; border-radius:14px; display:grid; place-items:center;
+      background:var(--noir); color:#fff; margin-bottom:18px;
+    }
+    .mini-card .ic svg{ width:23px; height:23px; }
+    .mini-card h3{ font-size:1.22rem; margin-bottom:9px; }
+    .mini-card p{ color:var(--noir-60); font-size:.95rem; }
+
+    /* ---------- Services ---------- */
+    .services{ background:linear-gradient(180deg,#FBFAF8,var(--ivory)); }
+    .services-grid{ display:grid; grid-template-columns:1fr; gap:22px; }
+    .service-card{
+      background:var(--card); border:1px solid var(--line); border-radius:var(--radius);
+      padding:30px 28px; box-shadow:var(--shadow-sm); position:relative; overflow:hidden;
+      transition:transform .4s var(--ease), box-shadow .4s var(--ease), border-color .4s;
+      display:flex; flex-direction:column;
+    }
+    .service-card::before{
+      content:""; position:absolute; top:0; left:0; width:100%; height:3px;
+      background:linear-gradient(90deg,var(--noir),transparent); transform:scaleX(0); transform-origin:left; transition:transform .45s var(--ease);
+    }
+    .service-card:hover{ transform:translateY(-6px); box-shadow:var(--shadow-md); border-color:rgba(21,18,15,.45); }
+    .service-card:hover::before{ transform:scaleX(1); }
+    .service-card .s-ic{
+      width:52px; height:52px; border-radius:50%; display:grid; place-items:center;
+      background:rgba(21,18,15,.06); color:var(--noir); margin-bottom:20px;
+    }
+    .service-card .s-ic svg{ width:25px; height:25px; }
+    .service-card .badge-pop{
+      position:absolute; top:20px; right:20px; font-size:.64rem; font-weight:700; letter-spacing:.12em;
+      text-transform:uppercase; color:#fff; background:var(--noir); padding:4px 10px; border-radius:999px;
+    }
+    .service-card h3{ font-size:1.4rem; margin-bottom:10px; }
+    .service-card p.desc{ color:var(--noir-60); font-size:.95rem; margin-bottom:16px; }
+    .service-card .fit{ font-size:.85rem; color:var(--rose); font-weight:600; margin-bottom:22px; display:flex; gap:8px; align-items:flex-start; }
+    .service-card .fit svg{ width:15px; height:15px; margin-top:3px; flex:none; }
+    .service-card .btn{ margin-top:auto; }
+
+    /* ---------- Bridal feature band ---------- */
+    .bridal{ background:var(--noir); color:#fff; overflow:hidden; }
+    .bridal-wrap{ display:grid; grid-template-columns:1fr; gap:36px; align-items:center; }
+    .bridal-copy .eyebrow{ color:#fff; }
+    .bridal-copy .eyebrow::before{ background:#fff; }
+    .bridal-copy h2{ font-size:clamp(1.9rem,4.6vw,2.9rem); margin:14px 0 16px; color:#fff; }
+    .bridal-copy > p{ color:rgba(255,255,255,.72); font-size:1.05rem; margin-bottom:26px; }
+    .bridal-copy .btn-primary{ background:#fff; color:var(--noir); box-shadow:0 10px 26px rgba(0,0,0,.3); }
+    .bridal-copy .btn-primary:hover{ background:#fff; }
+    .bridal-card{
+      background:#fff; color:var(--noir); border:1px solid rgba(255,255,255,.14); border-radius:var(--radius);
+      padding:34px 30px; box-shadow:var(--shadow-md); position:relative;
+    }
+    .bridal-card .crown{
+      width:58px; height:58px; border-radius:50%; display:grid; place-items:center;
+      background:var(--noir); color:#fff; margin-bottom:18px;
+    }
+    .bridal-card .crown svg{ width:28px; height:28px; }
+    .bridal-card h3{ font-size:1.5rem; margin-bottom:6px; }
+    .bridal-card .sub{ color:var(--noir-60); font-weight:600; font-size:.85rem; letter-spacing:.04em; margin-bottom:20px; }
+    .bridal-list{ display:grid; gap:13px; margin-bottom:24px; }
+    .bridal-list li{ display:flex; gap:12px; align-items:flex-start; font-size:.98rem; }
+    .bridal-list .tick{ width:22px; height:22px; flex:none; border-radius:50%; background:var(--noir); color:#fff; display:grid; place-items:center; margin-top:2px; }
+    .bridal-list .tick svg{ width:13px; height:13px; }
+
+    /* ---------- Price list ---------- */
+    .pricing{ background:var(--ivory); }
+    .menu{ display:grid; grid-template-columns:1fr; gap:30px 50px; max-width:980px; margin:0 auto; }
+    .menu-group h3{
+      font-size:1.3rem; margin-bottom:6px; padding-bottom:14px; border-bottom:2px solid var(--noir);
+      display:flex; align-items:center; gap:10px;
+    }
+    .menu-group h3 svg{ width:20px; height:20px; color:var(--noir); flex:none; }
+    .menu-row{
+      display:flex; align-items:flex-end; gap:10px; padding:12px 0; border-bottom:1px dashed var(--line);
+    }
+    .menu-row .nm{ font-weight:500; font-size:.96rem; line-height:1.35; }
+    .menu-row .dots{ flex:1 1 14px; min-width:14px; border-bottom:1px dotted var(--line); margin-bottom:6px; }
+    .menu-row .pr{ font-family:var(--sans); font-weight:600; font-size:.94rem; color:var(--noir); white-space:nowrap; font-variant-numeric:tabular-nums; letter-spacing:.005em; }
+    .menu-note{ text-align:center; color:var(--noir-45); font-size:.84rem; margin-top:34px; }
+
+    /* ---------- Process ---------- */
+    .process{ background:var(--blush); }
+    .process .steps{ display:grid; grid-template-columns:1fr; gap:24px; margin-bottom:54px; }
+    .step{
+      background:var(--card); border:1px solid var(--line); border-radius:var(--radius); padding:32px 28px;
+      position:relative; box-shadow:var(--shadow-sm);
+    }
+    .step .num{
+      font-family:var(--serif); font-size:2.4rem; color:var(--noir); line-height:1; font-weight:700;
+      display:block; margin-bottom:14px; opacity:.18;
+    }
+    .step h3{ font-size:1.28rem; margin-bottom:10px; }
+    .step p{ color:var(--noir-60); font-size:.95rem; }
+
+    .quiz{
+      background:var(--card); border:1px solid var(--line); border-radius:var(--radius);
+      padding:36px 30px; box-shadow:var(--shadow-md); text-align:center; max-width:780px; margin:0 auto;
+    }
+    .quiz .eyebrow{ justify-content:center; margin-bottom:12px; }
+    .quiz h3{ font-size:clamp(1.4rem,3.5vw,1.9rem); margin-bottom:8px; }
+    .quiz > p{ color:var(--noir-60); margin-bottom:26px; }
+    .quiz-q{ text-align:left; border-top:1px solid var(--line); padding:18px 4px; }
+    .quiz-q .q{ font-weight:600; margin-bottom:12px; display:flex; gap:10px; align-items:center; }
+    .quiz-q .q svg{ width:18px; height:18px; color:var(--noir); flex:none; }
+    .quiz-opts{ display:flex; flex-wrap:wrap; gap:10px; }
+    .quiz-opt{
+      border:1px solid var(--line); background:var(--ivory); border-radius:999px; padding:9px 18px;
+      font-size:.88rem; font-weight:500; cursor:pointer; transition:all .25s var(--ease);
+    }
+    .quiz-opt:hover{ border-color:var(--noir); color:var(--noir); }
+    .quiz-opt.active{ background:var(--noir); color:#fff; border-color:var(--noir); }
+    .quiz .btn{ margin-top:26px; }
+
+    /* ---------- Lookbook / Instagram ---------- */
+    .gallery{ background:var(--ivory); }
+    .lookbook{ display:grid; grid-template-columns:repeat(2,1fr); gap:16px; }
+    .look{
+      position:relative; border-radius:var(--radius-sm); overflow:hidden; aspect-ratio:4/5;
+      box-shadow:var(--shadow-sm); transition:transform .4s var(--ease), box-shadow .4s var(--ease);
+    }
+    .look:hover{ transform:translateY(-4px); box-shadow:var(--shadow-md); }
+    .look .tone{ position:absolute; inset:0; }
+    .look .tone::after{
+      content:""; position:absolute; inset:0;
+      background:
+        repeating-linear-gradient(115deg, rgba(255,255,255,.05) 0 2px, transparent 2px 9px),
+        radial-gradient(120% 80% at 50% 0%, rgba(255,255,255,.18), transparent 55%),
+        linear-gradient(180deg, transparent 45%, rgba(21,18,15,.5) 100%);
+    }
+    /* monokrom placeholder tonları */
+    .tone-a{ background:linear-gradient(150deg,#d9d5cf,#a39c93 55%,#6c665f); }
+    .tone-b{ background:linear-gradient(150deg,#ebe7e1,#bcb4aa 55%,#857d74); }
+    .tone-c{ background:linear-gradient(150deg,#cfcabf,#8f877d 60%,#544e47); }
+    .tone-d{ background:linear-gradient(150deg,#e2ddd6,#aaa399 55%,#675f57); }
+    .tone-e{ background:linear-gradient(150deg,#f0ece6,#c2bab0 55%,#8a837a); }
+    .tone-f{ background:linear-gradient(150deg,#d5d0c8,#9b948b 55%,#5f5952); }
+    .look .look-ic{ position:absolute; top:14px; left:14px; z-index:2; color:rgba(255,255,255,.9); }
+    .look .look-ic svg{ width:24px; height:24px; }
+    .look .cap{ position:absolute; left:16px; right:16px; bottom:14px; z-index:2; color:#fff; }
+    .look .cap .t{ font-family:var(--serif); font-size:1.05rem; font-weight:600; }
+    .look .cap .s{ font-size:.78rem; opacity:.85; }
+
+    /* before/after look tile */
+    .look.ba-tile{ aspect-ratio:4/5; }
+    .ba{ position:relative; width:100%; height:100%; user-select:none; touch-action:pan-y; }
+    .ba-layer{ position:absolute; inset:0; }
+    .ba-before{ clip-path: inset(0 0 0 0); will-change:clip-path; }
+    .ba-tone{ position:absolute; inset:0; }
+    .ph-label{
+      position:absolute; bottom:14px; left:14px; z-index:3;
+      font-size:.66rem; font-weight:700; letter-spacing:.14em; text-transform:uppercase;
+      background:rgba(21,18,15,.6); color:#fff; padding:5px 11px; border-radius:999px;
+      backdrop-filter:blur(4px);
+    }
+    .ba-before .ph-label{ left:auto; right:14px; background:rgba(255,255,255,.92); color:var(--noir); }
+    .ba-handle{
+      position:absolute; top:0; bottom:0; left:50%; width:2px; background:#fff; z-index:5;
+      box-shadow:0 0 0 1px rgba(21,18,15,.15); cursor:ew-resize; transform:translateX(-1px);
+    }
+    .ba-handle .grip{
+      position:absolute; top:50%; left:50%; transform:translate(-50%,-50%);
+      width:40px; height:40px; border-radius:50%; background:#fff; box-shadow:var(--shadow-md);
+      display:grid; place-items:center; color:var(--noir);
+    }
+    .ba-handle .grip svg{ width:19px; height:19px; }
+    .ba input[type=range]{
+      position:absolute; inset:0; width:100%; height:100%; opacity:0; cursor:ew-resize; z-index:6; margin:0;
+    }
+    .ig-cta{ text-align:center; margin-top:34px; }
+    .ig-cta .note{ color:var(--noir-45); font-size:.84rem; margin-top:14px; }
+
+    /* ---------- Trust ---------- */
+    .trust{ background:linear-gradient(180deg,var(--ivory),#FBFAF8); }
+    .trust-wrap{ display:grid; grid-template-columns:1fr; gap:40px; align-items:center; }
+    .trust-list{ display:grid; gap:14px; }
+    .trust-row{
+      display:flex; gap:15px; align-items:flex-start; background:var(--card);
+      border:1px solid var(--line); border-radius:var(--radius-sm); padding:18px 20px; box-shadow:var(--shadow-sm);
+    }
+    .trust-row .ic{ width:40px; height:40px; flex:none; border-radius:11px; display:grid; place-items:center; background:rgba(21,18,15,.06); color:var(--noir); }
+    .trust-row .ic svg{ width:20px; height:20px; }
+    .trust-row h4{ font-family:var(--sans); font-weight:600; font-size:1rem; margin-bottom:2px; }
+    .trust-row p{ color:var(--noir-60); font-size:.9rem; }
+
+    /* rating block */
+    .rating-block{ text-align:center; background:var(--noir); color:#fff; border-radius:var(--radius); padding:34px 26px; box-shadow:var(--shadow-md); }
+    .rating-block .score{ font-family:var(--serif); font-size:3.4rem; line-height:1; color:#fff; }
+    .rating-block .stars{ color:#fff; font-size:1.3rem; letter-spacing:3px; margin:8px 0 6px; }
+    .rating-block .count{ color:rgba(255,255,255,.75); font-size:.92rem; }
+    .rating-block .src{ font-size:.74rem; letter-spacing:.14em; text-transform:uppercase; color:rgba(255,255,255,.55); margin-top:14px; }
+
+    /* ---------- Testimonials ---------- */
+    .reviews{ background:var(--blush); }
+    .reviews-grid{ display:grid; grid-template-columns:1fr; gap:20px; }
+    .review{
+      background:var(--card); border:1px solid var(--line); border-radius:var(--radius); padding:28px 26px;
+      box-shadow:var(--shadow-sm);
+    }
+    .review .stars{ color:var(--noir); letter-spacing:2px; margin-bottom:12px; }
+    .review p{ font-family:var(--serif); font-style:italic; font-size:1.05rem; line-height:1.5; color:var(--noir); margin-bottom:18px; }
+    .review .who{ display:flex; align-items:center; gap:12px; }
+    .review .av{ width:40px; height:40px; border-radius:50%; display:grid; place-items:center; color:#fff; font-weight:600; background:var(--noir); }
+    .review .who b{ font-weight:600; font-size:.95rem; display:block; }
+    .review .who small{ color:var(--noir-45); font-size:.8rem; }
+
+    /* ---------- Accordion ---------- */
+    .acc{ max-width:840px; margin:0 auto; display:grid; gap:14px; }
+    .acc-item{ background:var(--card); border:1px solid var(--line); border-radius:var(--radius-sm); overflow:hidden; transition:border-color .3s, box-shadow .3s; }
+    .acc-item.open{ border-color:rgba(21,18,15,.4); box-shadow:var(--shadow-sm); }
+    .acc-q{
+      width:100%; text-align:left; background:none; border:0; cursor:pointer;
+      padding:20px 22px; display:flex; align-items:center; justify-content:space-between; gap:16px;
+      font-family:var(--serif); font-size:1.1rem; font-weight:600; color:var(--noir);
+    }
+    .acc-q .pm{ width:26px; height:26px; flex:none; border-radius:50%; border:1px solid var(--line); display:grid; place-items:center; transition:transform .35s var(--ease), background .3s, color .3s; color:var(--noir); }
+    .acc-item.open .acc-q .pm{ background:var(--noir); color:#fff; border-color:var(--noir); transform:rotate(45deg); }
+    .acc-q .pm svg{ width:14px; height:14px; }
+    .acc-a{ max-height:0; overflow:hidden; transition:max-height .4s var(--ease); }
+    .acc-a .inner{ padding:0 22px 22px; color:var(--noir-60); font-size:.96rem; }
+
+    /* ---------- Final CTA ---------- */
+    .final{
+      background:
+        radial-gradient(800px 400px at 50% 0%, rgba(255,255,255,.06), transparent 65%),
+        linear-gradient(160deg,#232020,#0e0c0b);
+      color:#F4F2EF; text-align:center;
+    }
+    .final h2{ color:#fff; font-size:clamp(2rem,5vw,3.2rem); max-width:760px; margin:0 auto 18px; }
+    .final p{ color:rgba(244,242,239,.74); max-width:580px; margin:0 auto 32px; font-size:1.05rem; }
+    .final .ctas{ display:flex; flex-wrap:wrap; gap:14px; justify-content:center; }
+    .final .btn-primary{ background:#fff; color:var(--noir); }
+    .final .btn-secondary{ color:#F4F2EF; border-color:rgba(244,242,239,.3); }
+    .final .btn-secondary:hover{ border-color:#fff; background:#fff; color:var(--noir); }
+
+    /* ---------- Contact ---------- */
+    .contact{ background:var(--ivory); }
+    .contact-wrap{ display:grid; grid-template-columns:1fr; gap:34px; }
+    .contact-info h2{ font-size:clamp(1.8rem,4.4vw,2.6rem); margin:14px 0 18px; }
+    .contact-info > p{ color:var(--noir-60); margin-bottom:26px; }
+    .info-list{ display:grid; gap:14px; margin-bottom:28px; }
+    .info-list li{ display:flex; gap:14px; align-items:flex-start; }
+    .info-list .ic{ width:42px; height:42px; flex:none; border-radius:12px; display:grid; place-items:center; background:rgba(21,18,15,.06); color:var(--noir); }
+    .info-list .ic svg{ width:19px; height:19px; }
+    .info-list small{ display:block; font-size:.74rem; letter-spacing:.14em; text-transform:uppercase; color:var(--noir-60); font-weight:600; }
+    .info-list strong{ font-weight:600; }
+    .info-list a:hover{ color:var(--noir); text-decoration:underline; }
+    .contact-ctas{ display:flex; flex-wrap:wrap; gap:12px; }
+    .map-wrap{ border-radius:var(--radius); overflow:hidden; box-shadow:var(--shadow-md); border:1px solid var(--line); min-height:340px; position:relative; }
+    .map-wrap iframe{ width:100%; height:100%; min-height:340px; border:0; display:block; }
+    .map-facade{
+      position:absolute; inset:0; display:grid; place-items:center; text-align:center; padding:28px;
+      background:
+        radial-gradient(140% 100% at 50% 0%, rgba(21,18,15,.06), transparent 60%),
+        repeating-linear-gradient(0deg, rgba(21,18,15,.04) 0 1px, transparent 1px 26px),
+        repeating-linear-gradient(90deg, rgba(21,18,15,.04) 0 1px, transparent 1px 26px),
+        var(--blush);
+    }
+    .map-facade .pin{ width:46px; height:46px; color:var(--noir); margin-bottom:10px; }
+    .map-facade strong{ font-family:var(--serif); font-size:1.25rem; display:block; }
+    .map-facade .loc{ color:var(--noir-60); font-size:.92rem; margin:4px 0 18px; }
+    .map-facade .btn{ margin-bottom:12px; }
+    .map-facade .map-open-link{ font-size:.85rem; color:var(--noir); font-weight:600; text-decoration:underline; }
+
+    /* ---------- Footer ---------- */
+    .footer{ background:#0e0c0b; color:rgba(244,242,239,.7); padding:50px 0 30px; }
+    .footer-top{ display:grid; grid-template-columns:1fr; gap:26px; padding-bottom:30px; border-bottom:1px solid rgba(244,242,239,.12); }
+    .footer .logo{ color:#fff; }
+    .footer p{ font-size:.9rem; max-width:340px; }
+    .footer h5{ font-family:var(--sans); color:#fff; font-size:.78rem; letter-spacing:.16em; text-transform:uppercase; margin-bottom:14px; }
+    .footer ul li{ margin-bottom:9px; }
+    .footer a:hover{ color:#fff; }
+    .footer-bottom{ display:flex; flex-wrap:wrap; gap:10px; justify-content:space-between; padding-top:22px; font-size:.82rem; color:rgba(244,242,239,.5); }
+
+    /* ---------- Floating WhatsApp ---------- */
+    .wa-float{
+      position:fixed; right:18px; bottom:18px; z-index:90;
+      width:58px; height:58px; border-radius:50%; background:#25D366; color:#fff;
+      display:grid; place-items:center; box-shadow:0 12px 30px rgba(37,211,102,.45);
+      transition:transform .3s var(--ease); animation:pulse 2.6s infinite;
+    }
+    .wa-float:hover{ transform:scale(1.08); }
+    .wa-float svg{ width:30px; height:30px; }
+    @keyframes pulse{ 0%{ box-shadow:0 12px 30px rgba(37,211,102,.45),0 0 0 0 rgba(37,211,102,.5);} 70%{ box-shadow:0 12px 30px rgba(37,211,102,.45),0 0 0 16px rgba(37,211,102,0);} 100%{ box-shadow:0 12px 30px rgba(37,211,102,.45),0 0 0 0 rgba(37,211,102,0);} }
+
+    /* ---------- Scroll reveal ---------- */
+    .reveal{ opacity:0; transform:translateY(26px); transition:opacity .8s var(--ease), transform .8s var(--ease); }
+    .reveal.in{ opacity:1; transform:none; }
+    .reveal.d1{ transition-delay:.1s; } .reveal.d2{ transition-delay:.2s; }
+    .reveal.d3{ transition-delay:.3s; } .reveal.d4{ transition-delay:.4s; }
+
+    .hero-anim{ opacity:0; transform:translateY(22px); }
+    .loaded .hero-anim{ animation:fadeUp .9s var(--ease) forwards; }
+    .loaded .a1{ animation-delay:.05s; } .loaded .a2{ animation-delay:.2s; }
+    .loaded .a3{ animation-delay:.35s; } .loaded .a4{ animation-delay:.5s; }
+    @keyframes fadeUp{ to{ opacity:1; transform:none; } }
+    .hero-visual.hero-anim{ transform:translateY(22px) scale(.96); }
+    .loaded .hero-visual.hero-anim{ animation:scaleIn 1s var(--ease) .25s forwards; }
+    @keyframes scaleIn{ to{ opacity:1; transform:none; } }
+
+    /* ---------- Responsive ---------- */
+    @media (min-width:600px){
+      .cards-3{ grid-template-columns:repeat(3,1fr); }
+      .hero-badges{ gap:16px 24px; }
+      .services-grid{ grid-template-columns:repeat(2,1fr); }
+      .process .steps{ grid-template-columns:repeat(3,1fr); }
+      .menu{ grid-template-columns:1fr 1fr; }
+      .lookbook{ grid-template-columns:repeat(3,1fr); }
+      .reviews-grid{ grid-template-columns:repeat(3,1fr); }
+      .footer-top{ grid-template-columns:1.6fr 1fr 1fr; }
+    }
+    @media (min-width:900px){
+      .nav-links{ display:flex; }
+      .nav-cta{ display:inline-flex; }
+      .hamburger{ display:none; }
+      .hero{ padding:160px 0 90px; }
+      .hero-inner{ grid-template-columns:1.05fr .95fr; gap:60px; }
+      .services-grid{ grid-template-columns:repeat(3,1fr); }
+      .bridal-wrap{ grid-template-columns:1.1fr .9fr; gap:56px; }
+      .trust-wrap{ grid-template-columns:1fr 1fr; gap:56px; }
+      .contact-wrap{ grid-template-columns:1fr 1fr; }
+      .wa-float{ right:26px; bottom:26px; }
+    }
+    @media (min-width:1100px){
+      .pad{ padding:104px 0; }
+    }
+
+    @media (prefers-reduced-motion: reduce){
+      *{ animation:none !important; transition:none !important; scroll-behavior:auto !important; }
+      .reveal{ opacity:1; transform:none; }
+      .hero-anim{ opacity:1; transform:none; }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- ============================================================ HEADER -->
+  <header class="header" id="header">
+    <div class="container nav">
+      <a href="#hero" class="logo sm" aria-label="Saloon Cadde ana sayfa">
+        <svg class="cadde-face" viewBox="0 0 120 132" fill="none" stroke="currentColor" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M48 14 C 86 6 112 34 96 62 C 120 80 102 122 70 128"/>
+          <path d="M53 28 C 82 22 98 44 86 64 C 100 80 90 106 70 113"/>
+          <path d="M61 30 C 51 40 50 53 57 60 C 50 62 50 70 57 72 C 53 78 59 83 68 80"/>
+        </svg>
+        <span class="lk"><span class="scr">Saloon</span><span class="cadde">Cadde</span></span>
+      </a>
+
+      <nav class="nav-links" aria-label="Ana menü">
+        <a href="#services">Hizmetler</a>
+        <a href="#bridal">Gelin</a>
+        <a href="#pricing">Fiyatlar</a>
+        <a href="#gallery">Galeri</a>
+        <a href="#faq">SSS</a>
+        <a href="#contact">İletişim</a>
+      </nav>
+
+      <a href="#" class="btn btn-primary nav-cta" data-wa>
+        <svg class="wa-ico" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38c1.45.79 3.08 1.21 4.79 1.21 5.46 0 9.91-4.45 9.91-9.91S17.5 2 12.04 2zm5.8 14.16c-.24.68-1.42 1.32-1.96 1.36-.5.04-.95.21-3.2-.67-2.7-1.06-4.4-3.84-4.53-4.02-.13-.18-1.08-1.43-1.08-2.73s.68-1.94.92-2.2c.24-.27.53-.34.71-.34l.51.01c.16 0 .38-.06.6.46.24.56.79 1.94.86 2.08.07.13.12.29.02.47-.09.18-.14.29-.27.45l-.4.46c-.13.13-.27.28-.12.55.16.27.7 1.15 1.5 1.86 1.03.92 1.9 1.2 2.17 1.34.27.13.42.11.58-.07.16-.18.66-.77.84-1.04.18-.27.36-.22.6-.13.24.09 1.55.73 1.81.86.27.13.45.2.51.31.07.11.07.63-.17 1.32z"/></svg>
+        Randevu Al
+      </a>
+
+      <button class="hamburger" id="hamburger" aria-label="Menüyü aç" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- mobile menu -->
+  <div class="overlay" id="overlay"></div>
+  <nav class="mobile-menu" id="mobileMenu" aria-label="Mobil menü">
+    <a href="#services">Hizmetler</a>
+    <a href="#bridal">Gelin Paketi</a>
+    <a href="#pricing">Fiyatlar</a>
+    <a href="#gallery">Galeri</a>
+    <a href="#faq">Sık Sorulanlar</a>
+    <a href="#contact">İletişim</a>
+    <a href="#" class="btn btn-primary" data-wa>WhatsApp'tan Randevu Al</a>
+  </nav>
+
+  <!-- ============================================================ HERO -->
+  <section class="hero" id="hero">
+    <div class="hero-lines" aria-hidden="true">
+      <svg viewBox="0 0 1200 700" preserveAspectRatio="none" fill="none">
+        <path d="M-50 120 C 300 60, 600 220, 1250 90" stroke="#15120F" stroke-width="1" stroke-opacity=".4"/>
+        <path d="M-50 260 C 350 200, 650 360, 1250 240" stroke="#15120F" stroke-width="1" stroke-opacity=".3"/>
+        <path d="M-50 420 C 300 360, 700 520, 1250 400" stroke="#15120F" stroke-width="1" stroke-opacity=".28"/>
+        <path d="M-50 560 C 400 500, 700 640, 1250 540" stroke="#15120F" stroke-width="1" stroke-opacity=".24"/>
+      </svg>
+    </div>
+
+    <div class="container hero-inner">
+      <div class="hero-copy">
+        <span class="eyebrow hero-anim a1">Urla · İzmir · Güzellik Salonu</span>
+        <h1 class="hero-anim a1">Urla'nın Kalbinde Zarafet ve Bakım</h1>
+        <p class="h1-sub hero-anim a2">Gelin gününüzden günlük bakımınıza, her detay özenle.</p>
+        <p class="lead hero-anim a2">Gelin saçı ve makyajından saç kesim, boya ve keratin bakımına; manikür, kalıcı oje, kalıcı makyaj ve ipek kirpiğe kadar tüm güzellik hizmetleri tek çatı altında. Kişiye özel, hijyenik ve profesyonel bir deneyim için WhatsApp'tan kolayca randevunuzu alın.</p>
+
+        <div class="hero-ctas hero-anim a3">
+          <a href="#" class="btn btn-primary" data-wa>
+            <svg viewBox="0 0 24 24" fill="currentColor" class="wa-ico" aria-hidden="true"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38c1.45.79 3.08 1.21 4.79 1.21 5.46 0 9.91-4.45 9.91-9.91S17.5 2 12.04 2z"/></svg>
+            WhatsApp'tan Randevu Al
+          </a>
+          <a href="#services" class="btn btn-secondary">Hizmetleri Keşfet</a>
+        </div>
+
+        <div class="hero-badges hero-anim a4">
+          <div class="hero-badge"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l2.4 5 5.6.5-4.2 3.7 1.3 5.6L12 19.5 6.9 16.8l1.3-5.6L4 7.5 9.6 7z"/></svg></span> Gelin saçı &amp; makyajı uzmanlığı</div>
+          <div class="hero-badge"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg></span> Hijyen ve özenli hizmet</div>
+          <div class="hero-badge"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-5.6-7-11a7 7 0 0 1 14 0c0 5.4-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg></span> Urla merkezde, kolay ulaşım</div>
+          <div class="hero-badge"><span class="ic"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38c1.45.79 3.08 1.21 4.79 1.21 5.46 0 9.91-4.45 9.91-9.91S17.5 2 12.04 2z"/></svg></span> WhatsApp ile hızlı randevu</div>
+        </div>
+      </div>
+
+      <!-- Hero visual / brand card -->
+      <div class="hero-visual hero-anim">
+        <div class="glow" aria-hidden="true"></div>
+        <div class="showcase">
+          <span class="tag-float"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.4 5 5.6.5-4.2 3.7 1.3 5.6L12 19.5 6.9 16.8l1.3-5.6L4 7.5 9.6 7z"/></svg> 4,9 · Google</span>
+          <div class="showcase-inner">
+            <div class="logo lg">
+              <svg class="cadde-face" viewBox="0 0 120 132" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M48 14 C 86 6 112 34 96 62 C 120 80 102 122 70 128"/>
+                <path d="M53 28 C 82 22 98 44 86 64 C 100 80 90 106 70 113"/>
+                <path d="M61 30 C 51 40 50 53 57 60 C 50 62 50 70 57 72 C 53 78 59 83 68 80"/>
+              </svg>
+              <span class="lk"><span class="scr">Saloon</span><span class="cadde">Cadde</span></span>
+            </div>
+            <div class="sc-line"></div>
+            <div class="sc-sub">Urla · İzmir</div>
+            <div class="sc-tagline">Gelin · Saç · Tırnak · Makyaj</div>
+          </div>
+        </div>
+
+        <div class="info-card">
+          <div class="swatches" aria-hidden="true">
+            <span style="background:#15120f"></span>
+            <span style="background:#3a342f"></span>
+            <span style="background:#6b645b"></span>
+            <span style="background:#a8a098"></span>
+            <span style="background:#ece7df"></span>
+          </div>
+          <div class="txt">
+            <small>Tek Çatı Altında</small>
+            <strong>Saç bakımı + tırnak + makyaj + gelin</strong>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================ SOCIAL PROOF -->
+  <div class="proof">
+    <div class="container">
+      <span class="chip"><span class="stars">★★★★★</span> 4,9 / 180+ değerlendirme</span>
+      <span class="sep"></span>
+      <span class="chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg> Gelin saçı &amp; makyajı</span>
+      <span class="sep"></span>
+      <span class="chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg> Hijyenik ortam</span>
+      <span class="sep"></span>
+      <span class="chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg> Randevulu salon deneyimi</span>
+    </div>
+  </div>
+
+  <!-- ============================================================ PROBLEM / DESIRE -->
+  <section class="problem pad">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">Neden Saloon Cadde?</span>
+        <h2>Kendinizi özel hissetmeniz için her detay düşünüldü.</h2>
+        <p>Doğru renk, doğru kesim ve size yakışan bir bakım için acele edilmeyen, kişiye özel bir deneyim. Urla'nın merkezinde, sıcak ve hijyenik bir ortamda uzman ellerle.</p>
+      </div>
+
+      <div class="cards-3">
+        <div class="mini-card reveal d1">
+          <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l2.4 5 5.6.5-4.2 3.7 1.3 5.6L12 19.5 6.9 16.8l1.3-5.6L4 7.5 9.6 7z"/></svg></div>
+          <h3>Kişiye özel danışmanlık</h3>
+          <p>Saç yapınız, ten renginiz ve tarzınıza göre size en çok yakışan görünümü birlikte belirleriz.</p>
+        </div>
+        <div class="mini-card reveal d2">
+          <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7 4v5c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V7z"/></svg></div>
+          <h3>Hijyen ve güven</h3>
+          <p>Tek kullanımlık malzeme ve düzenli sterilizasyon önceliğimiz; gönül rahatlığıyla ağırlanırsınız.</p>
+        </div>
+        <div class="mini-card reveal d3">
+          <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div>
+          <h3>Randevuyla zamanınız size ait</h3>
+          <p>Randevu sistemiyle beklemeden, size ayrılan zamanda sakin bir deneyim yaşarsınız.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================ SERVICES -->
+  <section class="services pad" id="services">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">Hizmetlerimiz</span>
+        <h2>Saçtan tırnağa, baştan aşağı bakım</h2>
+        <p>Günlük bakımdan özel günlere; saç, tırnak, makyaj ve gelin hizmetlerinin tamamı tek adreste.</p>
+      </div>
+
+      <div class="services-grid">
+        <!-- 1 Gelin -->
+        <article class="service-card reveal d1">
+          <span class="badge-pop">Favori</span>
+          <div class="s-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 16l3-9 5 6 5-6 3 9z"/><circle cx="6" cy="5" r="1"/><circle cx="12" cy="4" r="1"/><circle cx="18" cy="5" r="1"/></svg></div>
+          <h3>Gelin Saçı &amp; Makyajı</h3>
+          <p class="desc">Provadan büyük güne; gelin topuzu, gelin makyajı ve kına-nişan saçlarıyla en özel gününüze özel hazırlık.</p>
+          <p class="fit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg> Düğün, nişan, kına ve özel davetler için.</p>
+          <a href="#" class="btn btn-ghost btn-block" data-wa data-msg="Gelin saçı ve makyajı hakkında bilgi / prova randevusu almak istiyorum.">WhatsApp'tan Sor</a>
+        </article>
+        <!-- 2 Kesim & Fön -->
+        <article class="service-card reveal d2">
+          <div class="s-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="6" r="2.5"/><circle cx="6" cy="18" r="2.5"/><path d="M8 7.5L20 16M8 16.5L20 8"/></svg></div>
+          <h3>Saç Kesim &amp; Fön</h3>
+          <p class="desc">Yüz hatlarınıza uygun kesim, şekillendirme ve bakım fönüyle her gününüz bakımlı görünsün.</p>
+          <p class="fit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg> Yeni bir tarz ya da günlük bakım isteyenler için.</p>
+          <a href="#" class="btn btn-ghost btn-block" data-wa data-msg="Saç kesim / fön randevusu almak istiyorum.">WhatsApp'tan Sor</a>
+        </article>
+        <!-- 3 Boya & Ombre -->
+        <article class="service-card reveal d3">
+          <div class="s-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3c-3.5 4.5-6 7-6 10.5a6 6 0 0 0 12 0C18 10 15.5 7.5 12 3z"/></svg></div>
+          <h3>Saç Boyası &amp; Ombre</h3>
+          <p class="desc">Dip boya, komple renk, ombre ve röfle; size yakışan tonu doğru bakımla, sağlıklı bir sonuçla.</p>
+          <p class="fit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg> Renk değişimi ve doğal geçiş isteyenler için.</p>
+          <a href="#" class="btn btn-ghost btn-block" data-wa data-msg="Saç boyası / ombre hakkında bilgi almak istiyorum.">WhatsApp'tan Sor</a>
+        </article>
+        <!-- 4 Keratin / Brezilya -->
+        <article class="service-card reveal d1">
+          <div class="s-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M5 4c3 2 3 6 0 8s-3 6 0 8M12 4c3 2 3 6 0 8s-3 6 0 8M19 4c3 2 3 6 0 8s-3 6 0 8"/></svg></div>
+          <h3>Keratin &amp; Brezilya Fönü</h3>
+          <p class="desc">Yıpranmış ve kabaran saçlar için pürüzsüz, parlak ve daha kolay şekillenen bir görünüm.</p>
+          <p class="fit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg> Elektriklenen, kabaran saçları olanlar için.</p>
+          <a href="#" class="btn btn-ghost btn-block" data-wa data-msg="Keratin / Brezilya fönü hakkında bilgi almak istiyorum.">WhatsApp'tan Sor</a>
+        </article>
+        <!-- 5 Tırnak -->
+        <article class="service-card reveal d2">
+          <div class="s-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M9 3h6v9a3 3 0 0 1-6 0z"/><path d="M9 12h6"/><path d="M10 21h4"/></svg></div>
+          <h3>Manikür, Pedikür &amp; Kalıcı Oje</h3>
+          <p class="desc">Bakımlı eller ve ayaklar için manikür, pedikür ve uzun ömürlü kalıcı oje uygulamaları.</p>
+          <p class="fit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg> Kalıcı, şık ve bakımlı tırnak isteyenler için.</p>
+          <a href="#" class="btn btn-ghost btn-block" data-wa data-msg="Manikür / pedikür / kalıcı oje randevusu almak istiyorum.">WhatsApp'tan Sor</a>
+        </article>
+        <!-- 6 Makyaj & Kirpik -->
+        <article class="service-card reveal d3">
+          <div class="s-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12s3.5-6 10-6 10 6 10 6-3.5 6-10 6S2 12 2 12z"/><circle cx="12" cy="12" r="2.5"/></svg></div>
+          <h3>Makyaj, Kalıcı Makyaj &amp; İpek Kirpik</h3>
+          <p class="desc">Davet makyajı, kalıcı makyaj, ipek kirpik ve kaş tasarımıyla ifadenizi belirginleştiren dokunuşlar. Ağda hizmeti de mevcuttur.</p>
+          <p class="fit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg> Özel davet ve günlük bakım için.</p>
+          <a href="#" class="btn btn-ghost btn-block" data-wa data-msg="Makyaj / kalıcı makyaj / ipek kirpik hakkında bilgi almak istiyorum.">WhatsApp'tan Sor</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================ BRIDAL FEATURE -->
+  <section class="bridal pad" id="bridal">
+    <div class="container bridal-wrap">
+      <div class="bridal-copy reveal">
+        <span class="eyebrow">Gelin Paketi</span>
+        <h2>Hayalinizdeki gün için kusursuz bir hazırlık</h2>
+        <p>Urla'nın eşsiz düğün atmosferinde, gelin saçınız ve makyajınız gününüze yakışsın. Provadan büyük güne kadar her aşamada yanınızdayız; size özel planlanan paketlerle gününüzün telaşını biz üstleniyoruz.</p>
+        <a href="#" class="btn btn-primary" data-wa data-msg="Gelin paketi ve fiyatları hakkında bilgi almak istiyorum.">
+          <svg viewBox="0 0 24 24" fill="currentColor" class="wa-ico" aria-hidden="true"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38c1.45.79 3.08 1.21 4.79 1.21 5.46 0 9.91-4.45 9.91-9.91S17.5 2 12.04 2z"/></svg>
+          Gelin Randevusu Al
+        </a>
+      </div>
+
+      <div class="bridal-card reveal d1">
+        <div class="crown"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 17l-1-9 5 4 4-7 4 7 5-4-1 9z"/><path d="M4 17h16"/></svg></div>
+        <h3>Gelin Paketi İçeriği</h3>
+        <div class="sub">Size özel planlanır · WhatsApp'tan netleştirelim</div>
+        <ul class="bridal-list">
+          <li><span class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg></span> Gelin saçı provası &amp; büyük gün uygulaması</li>
+          <li><span class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg></span> Gelin makyajı &amp; kirpik uygulaması</li>
+          <li><span class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg></span> Kına &amp; nişan saçı seçenekleri</li>
+          <li><span class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg></span> El, ayak ve cilt bakımı ekleme imkânı</li>
+          <li><span class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg></span> Yakınlarınız için grup randevu seçeneği</li>
+        </ul>
+        <a href="#" class="btn btn-secondary btn-block" data-wa data-msg="Gelin paketi içeriği ve uygunluk için yazıyorum.">Detayları Konuşalım</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================ PRICING -->
+  <section class="pricing pad" id="pricing">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">Hizmet &amp; Fiyat Listesi</span>
+        <h2>Şeffaf, başlangıç fiyatları</h2>
+        <p>Aşağıdaki fiyatlar başlangıç fiyatlarıdır; saç uzunluğu, yoğunluk ve uygulamaya göre değişebilir. Net fiyat için WhatsApp'tan görüşelim.</p>
+      </div>
+
+      <div class="menu reveal">
+        <div class="menu-group">
+          <h3><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="6" r="2.5"/><circle cx="6" cy="18" r="2.5"/><path d="M8 7.5L20 16M8 16.5L20 8"/></svg> Saç</h3>
+          <div class="menu-row"><span class="nm">Saç Kesimi</span><span class="dots"></span><span class="pr">₺1.500'den</span></div>
+          <div class="menu-row"><span class="nm">Fön</span><span class="dots"></span><span class="pr">₺500'den</span></div>
+          <div class="menu-row"><span class="nm">Saç Boyası</span><span class="dots"></span><span class="pr">₺1.700'den</span></div>
+          <div class="menu-row"><span class="nm">Ombre / Röfle</span><span class="dots"></span><span class="pr">₺3.500'den</span></div>
+          <div class="menu-row"><span class="nm">Keratin / Brezilya Fönü</span><span class="dots"></span><span class="pr">₺6.000'den</span></div>
+          <div class="menu-row"><span class="nm">Gelin Başı</span><span class="dots"></span><span class="pr">Pakete özel</span></div>
+        </div>
+
+        <div class="menu-group">
+          <h3><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M9 3h6v9a3 3 0 0 1-6 0z"/><path d="M9 12h6"/><path d="M10 21h4"/></svg> Tırnak &amp; Bakım</h3>
+          <div class="menu-row"><span class="nm">Manikür</span><span class="dots"></span><span class="pr">₺700'den</span></div>
+          <div class="menu-row"><span class="nm">Pedikür</span><span class="dots"></span><span class="pr">₺950'den</span></div>
+          <div class="menu-row"><span class="nm">Kalıcı Oje (Jel)</span><span class="dots"></span><span class="pr">₺1.600'den</span></div>
+          <div class="menu-row"><span class="nm">Ağda</span><span class="dots"></span><span class="pr">₺400'den</span></div>
+          <div class="menu-row"><span class="nm">Kaş Tasarımı</span><span class="dots"></span><span class="pr">₺500'den</span></div>
+        </div>
+
+        <div class="menu-group">
+          <h3><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12s3.5-6 10-6 10 6 10 6-3.5 6-10 6S2 12 2 12z"/><circle cx="12" cy="12" r="2.5"/></svg> Makyaj &amp; Gelin</h3>
+          <div class="menu-row"><span class="nm">İpek Kirpik / Kirpik Lifting</span><span class="dots"></span><span class="pr">₺2.000'den</span></div>
+          <div class="menu-row"><span class="nm">Profesyonel Makyaj</span><span class="dots"></span><span class="pr">₺10.000'den</span></div>
+          <div class="menu-row"><span class="nm">Kalıcı Makyaj</span><span class="dots"></span><span class="pr">₺5.000'den</span></div>
+          <div class="menu-row"><span class="nm">Gelin Makyajı</span><span class="dots"></span><span class="pr">Pakete özel</span></div>
+          <div class="menu-row"><span class="nm">Gelin Paketi (Saç + Makyaj)</span><span class="dots"></span><span class="pr">Kişiye özel</span></div>
+        </div>
+      </div>
+      <p class="menu-note reveal">* Fiyatlar bilgilendirme amaçlıdır ve güncel kampanyalara göre değişebilir.</p>
+    </div>
+  </section>
+
+  <!-- ============================================================ PROCESS -->
+  <section class="process pad" id="process">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">Nasıl İlerliyoruz</span>
+        <h2>Randevudan sonuca, üç adımda</h2>
+        <p>Acele etmeden, size en yakışan sonucu birlikte planlıyoruz.</p>
+      </div>
+
+      <div class="steps">
+        <div class="step reveal d1">
+          <span class="num">01</span>
+          <h3>Randevu &amp; Danışmanlık</h3>
+          <p>WhatsApp'tan gününüzü ve hizmetinizi belirleyin; tarzınızı ve beklentinizi birlikte konuşalım.</p>
+        </div>
+        <div class="step reveal d2">
+          <span class="num">02</span>
+          <h3>Uygulama</h3>
+          <p>Uzman ekibimiz, hijyenik bir ortamda size ayrılan zamanda uygulamanızı titizlikle gerçekleştirir.</p>
+        </div>
+        <div class="step reveal d3">
+          <span class="num">03</span>
+          <h3>Bakım Önerileri</h3>
+          <p>Sonucun uzun süre kalıcı olması için size özel bakım önerileriyle uğurlanırsınız.</p>
+        </div>
+      </div>
+
+      <!-- mini selector -->
+      <div class="quiz reveal">
+        <span class="eyebrow">Size Uygun Hizmeti Bulalım</span>
+        <h3>Birkaç soruyla başlayalım</h3>
+        <p>Seçimlerinizi işaretleyin, WhatsApp'ta birlikte planlayalım.</p>
+
+        <div class="quiz-q">
+          <div class="q"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 8v.01M11 12h1v4h1"/></svg> Hangisi için geliyorsunuz?</div>
+          <div class="quiz-opts" data-quiz>
+            <button class="quiz-opt">Gelin / özel gün</button>
+            <button class="quiz-opt">Saç bakımı</button>
+            <button class="quiz-opt">Tırnak</button>
+            <button class="quiz-opt">Makyaj / kirpik</button>
+          </div>
+        </div>
+        <div class="quiz-q">
+          <div class="q"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 8v.01M11 12h1v4h1"/></svg> Ne zaman için planlıyorsunuz?</div>
+          <div class="quiz-opts" data-quiz>
+            <button class="quiz-opt">Bu hafta</button>
+            <button class="quiz-opt">Bu ay</button>
+            <button class="quiz-opt">Belirli bir tarih</button>
+          </div>
+        </div>
+        <div class="quiz-q">
+          <div class="q"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 8v.01M11 12h1v4h1"/></svg> Daha önce salonumuza geldiniz mi?</div>
+          <div class="quiz-opts" data-quiz>
+            <button class="quiz-opt">İlk kez</button>
+            <button class="quiz-opt">Tekrar geliyorum</button>
+          </div>
+        </div>
+
+        <a href="#" class="btn btn-primary" data-wa data-msg="Size uygun hizmet bölümünü doldurdum, randevu için yazıyorum.">
+          <svg viewBox="0 0 24 24" fill="currentColor" class="wa-ico"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38c1.45.79 3.08 1.21 4.79 1.21 5.46 0 9.91-4.45 9.91-9.91S17.5 2 12.04 2z"/></svg>
+          WhatsApp'tan Randevu Oluştur
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================ GALLERY / LOOKBOOK -->
+  <section class="gallery pad" id="gallery">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">Galeri · Lookbook</span>
+        <h2>İşlerimizden bir seçki</h2>
+        <p>Gelin saçından renk dönüşümlerine, tırnaktan makyaja kadar salonumuzdan kareler. Güncel paylaşımların tamamı Instagram'da.</p>
+      </div>
+
+      <div class="lookbook reveal">
+        <!-- before/after interactive tile -->
+        <div class="look ba-tile">
+          <div class="ba" data-ba>
+            <div class="ba-layer ba-after"><div class="ba-tone tone-d"></div><span class="ph-label">Öncesi</span></div>
+            <div class="ba-layer ba-before"><div class="ba-tone tone-c"></div><span class="ph-label">Sonrası</span></div>
+            <div class="ba-handle" data-handle><span class="grip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l-4 6 4 6M15 6l4 6-4 6"/></svg></span></div>
+            <input type="range" min="0" max="100" value="50" aria-label="Renk dönüşümü öncesi ve sonrası karşılaştır" />
+          </div>
+        </div>
+
+        <div class="look">
+          <div class="tone tone-b"></div>
+          <span class="look-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 16l3-9 5 6 5-6 3 9z"/></svg></span>
+          <div class="cap"><div class="t">Gelin Topuzu</div><div class="s">Özel gün saç tasarımı</div></div>
+        </div>
+        <div class="look">
+          <div class="tone tone-a"></div>
+          <span class="look-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3c-3.5 4.5-6 7-6 10.5a6 6 0 0 0 12 0C18 10 15.5 7.5 12 3z"/></svg></span>
+          <div class="cap"><div class="t">Saç Boyası &amp; Ombre</div><div class="s">Doğal geçişli renk</div></div>
+        </div>
+        <div class="look">
+          <div class="tone tone-e"></div>
+          <span class="look-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12s3.5-6 10-6 10 6 10 6-3.5 6-10 6S2 12 2 12z"/><circle cx="12" cy="12" r="2.5"/></svg></span>
+          <div class="cap"><div class="t">Gelin Makyajı</div><div class="s">İpek kirpik dokunuşu</div></div>
+        </div>
+        <div class="look">
+          <div class="tone tone-f"></div>
+          <span class="look-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M9 3h6v9a3 3 0 0 1-6 0z"/><path d="M9 12h6"/></svg></span>
+          <div class="cap"><div class="t">Kalıcı Oje</div><div class="s">Manikür &amp; bakım</div></div>
+        </div>
+        <div class="look">
+          <div class="tone tone-c"></div>
+          <span class="look-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M5 4c3 2 3 6 0 8s-3 6 0 8M12 4c3 2 3 6 0 8s-3 6 0 8M19 4c3 2 3 6 0 8s-3 6 0 8"/></svg></span>
+          <div class="cap"><div class="t">Keratin Fönü</div><div class="s">Pürüzsüz &amp; parlak</div></div>
+        </div>
+      </div>
+
+      <div class="ig-cta reveal">
+        <a href="https://www.instagram.com/saloon.cadde" target="_blank" rel="noopener" class="btn btn-secondary">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1.2" fill="currentColor" stroke="none"/></svg>
+          Tüm işleri Instagram'da gör · @saloon.cadde
+        </a>
+        <p class="note">Bu alandaki kareler demo amaçlıdır; salonun gerçek fotoğrafları yerleştirildiğinde aynı düzende görünür.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================ TRUST + RATING -->
+  <section class="trust pad">
+    <div class="container">
+      <div class="trust-wrap">
+        <div class="trust-list">
+          <div class="trust-row reveal d1"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7 4v5c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V7z"/></svg></div><div><h4>Hijyen önceliği</h4><p>Tek kullanımlık malzeme ve düzenli sterilizasyon.</p></div></div>
+          <div class="trust-row reveal d1"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l2.4 5 5.6.5-4.2 3.7 1.3 5.6L12 19.5 6.9 16.8l1.3-5.6L4 7.5 9.6 7z"/></svg></div><div><h4>Deneyimli ekip</h4><p>Gelin saçı ve makyajında özenli, profesyonel dokunuş.</p></div></div>
+          <div class="trust-row reveal d2"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div><div><h4>Randevulu düzen</h4><p>Size ayrılan zamanda, beklemeden sakin bir deneyim.</p></div></div>
+          <div class="trust-row reveal d2"><div class="ic"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38c1.45.79 3.08 1.21 4.79 1.21 5.46 0 9.91-4.45 9.91-9.91S17.5 2 12.04 2z"/></svg></div><div><h4>WhatsApp ile kolay iletişim</h4><p>Fotoğrafınızı gönderin, hızlı dönüş alın.</p></div></div>
+        </div>
+
+        <div class="reveal">
+          <div class="rating-block">
+            <div class="score">4,9</div>
+            <div class="stars">★★★★★</div>
+            <div class="count">180+ değerlendirme · Urla</div>
+            <div class="src">Google &amp; Randevu Yorumları</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================ REVIEWS -->
+  <section class="reviews pad">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">Müşteri Yorumları</span>
+        <h2>Urla'nın gönlünde bir adres</h2>
+        <p>Temizlik, profesyonellik ve samimiyet en çok öne çıkan yorumlar arasında.</p>
+      </div>
+
+      <div class="reviews-grid">
+        <div class="review reveal d1">
+          <div class="stars">★★★★★</div>
+          <p>"Urla'da profesyonellerden kaliteli hizmet almak istiyorsanız doğru adres. İlgi ve temizlik mükemmel."</p>
+          <div class="who"><span class="av">A</span><div><b>Ayşe K.</b><small>Google · Urla</small></div></div>
+        </div>
+        <div class="review reveal d2">
+          <div class="stars">★★★★★</div>
+          <p>"Gelin saçım ve makyajım hayalimdeki gibi oldu. Provadan büyük güne kadar her aşamada çok ilgililerdi."</p>
+          <div class="who"><span class="av">E</span><div><b>Elif D.</b><small>Google · Urla</small></div></div>
+        </div>
+        <div class="review reveal d3">
+          <div class="stars">★★★★★</div>
+          <p>"Saç boyası ve bakımdan çok memnun kaldım. Hem hijyen hem de sonuç açısından gönül rahatlığıyla gidebilirsiniz."</p>
+          <div class="who"><span class="av">S</span><div><b>Selin Y.</b><small>Google · Urla</small></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================ FAQ -->
+  <section class="pad" id="faq" style="background:var(--ivory);">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">Sık Sorulan Sorular</span>
+        <h2>Aklınızdaki soruların yanıtı</h2>
+      </div>
+      <div class="acc reveal" data-acc>
+        <div class="acc-item">
+          <button class="acc-q">Randevu nasıl alabilirim? <span class="pm"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span></button>
+          <div class="acc-a"><div class="inner">En hızlı yöntem WhatsApp'tan yazmaktır. Hangi hizmeti, hangi gün için istediğinizi iletmeniz yeterli; size uygun saati birlikte belirleriz.</div></div>
+        </div>
+        <div class="acc-item">
+          <button class="acc-q">Gelin saçı için prova yapıyor musunuz? <span class="pm"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span></button>
+          <div class="acc-a"><div class="inner">Evet. Büyük günden önce prova ile saç ve makyaj modelini netleştiriyoruz; böylece düğün günü sürpriz olmadan, istediğiniz görünüme ulaşıyorsunuz. Detaylar gelin paketinde planlanır.</div></div>
+        </div>
+        <div class="acc-item">
+          <button class="acc-q">Fiyatlar nasıl belirleniyor? <span class="pm"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span></button>
+          <div class="acc-a"><div class="inner">Fiyat; hizmete, saç uzunluğuna, yoğunluğa ve uygulamaya göre değişir. Listelenen fiyatlar başlangıç fiyatlarıdır. Net bir bilgi için WhatsApp'tan görüşmeniz önerilir.</div></div>
+        </div>
+        <div class="acc-item">
+          <button class="acc-q">Saç boyası / keratin saça zarar verir mi? <span class="pm"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span></button>
+          <div class="acc-a"><div class="inner">Saç yapınıza uygun ürün seçimi ve doğru uygulama ile sağlıklı bir sonuç hedeflenir. Uygulama öncesi saçınız değerlendirilir ve size uygun bakım önerileri paylaşılır.</div></div>
+        </div>
+        <div class="acc-item">
+          <button class="acc-q">Hijyen konusunda nelere dikkat ediyorsunuz? <span class="pm"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span></button>
+          <div class="acc-a"><div class="inner">Tek kullanımlık malzemeler, düzenli sterilizasyon ve temiz bir çalışma alanı önceliğimizdir. Gönül rahatlığıyla hizmet almanız için gerekli tüm özen gösterilir.</div></div>
+        </div>
+        <div class="acc-item">
+          <button class="acc-q">Çalışma saatleriniz nedir? <span class="pm"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span></button>
+          <div class="acc-a"><div class="inner">Pazartesi–Cumartesi 08:00–20:00 saatleri arasında hizmet veriyoruz. Pazar günü kapalıyız. Özel gün ve gelin randevuları için saat esnetilebilir; WhatsApp'tan teyit alabilirsiniz.</div></div>
+        </div>
+        <div class="acc-item">
+          <button class="acc-q">Salon nerede, ulaşım kolay mı? <span class="pm"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span></button>
+          <div class="acc-a"><div class="inner">Yelaltı Mahallesi, 75. Yıl Cumhuriyet Caddesi üzerinde, Urla merkezde kolay ulaşılabilir bir konumdayız. Haritadan tek dokunuşla yol tarifi alabilirsiniz.</div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================ FINAL CTA -->
+  <section class="final pad">
+    <div class="container">
+      <h2 class="reveal">Sıra sizde — bakımınızı bize bırakın.</h2>
+      <p class="reveal d1">İster gelin gününüz, ister günlük bakımınız olsun; WhatsApp'tan yazın, size en uygun randevuyu birlikte oluşturalım.</p>
+      <div class="ctas reveal d2">
+        <a href="#" class="btn btn-primary" data-wa data-msg="Randevu almak istiyorum.">
+          <svg viewBox="0 0 24 24" fill="currentColor" class="wa-ico"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38c1.45.79 3.08 1.21 4.79 1.21 5.46 0 9.91-4.45 9.91-9.91S17.5 2 12.04 2z"/></svg>
+          WhatsApp'tan Randevu Al
+        </a>
+        <a href="#contact" class="btn btn-secondary">Konumu Gör</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================ CONTACT / LOCATION -->
+  <section class="contact pad" id="contact">
+    <div class="container contact-wrap">
+      <div class="contact-info reveal">
+        <span class="eyebrow">İletişim &amp; Konum</span>
+        <h2>Urla'da sizi bekliyoruz</h2>
+        <p>Yelaltı Mahallesi, 75. Yıl Cumhuriyet Caddesi üzerinde, Urla merkezde. Aşağıdaki kanallardan bize kolayca ulaşabilirsiniz.</p>
+
+        <ul class="info-list">
+          <li>
+            <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-5.6-7-11a7 7 0 0 1 14 0c0 5.4-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg></span>
+            <div><small>Adres</small><strong>Saloon Cadde</strong><br><span style="color:var(--noir-60)">Yelaltı Mah. 75. Yıl Cumhuriyet Cad. No:56/B, Urla / İzmir</span></div>
+          </li>
+          <li>
+            <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.8 19.8 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3.07-8.66A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg></span>
+            <div><small>Telefon</small><a href="tel:+905062817311" data-phone><strong>+90 506 281 73 11</strong></a></div>
+          </li>
+          <li>
+            <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span>
+            <div><small>Çalışma Saatleri</small><strong>Pzt – Cmt: 08:00 – 20:00</strong><br><span style="color:var(--noir-60)">Pazar kapalı</span></div>
+          </li>
+          <li>
+            <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1.2" fill="currentColor"/></svg></span>
+            <div><small>Instagram</small><a href="https://instagram.com/saloon.cadde" target="_blank" rel="noopener" data-instagram><strong>@saloon.cadde</strong></a></div>
+          </li>
+        </ul>
+
+        <div class="contact-ctas">
+          <a href="#" class="btn btn-primary" data-wa data-msg="Urla salonunuz için randevu almak istiyorum.">WhatsApp'tan Randevu Al</a>
+          <a href="https://www.google.com/maps/search/?api=1&query=Saloon+Cadde+75.+Y%C4%B1l+Cumhuriyet+Cad.+No%3A56%2FB+Urla+%C4%B0zmir" target="_blank" rel="noopener" class="btn btn-secondary">Yol Tarifi Al</a>
+        </div>
+      </div>
+
+      <div class="map-wrap reveal d1">
+        <div class="map-facade" id="mapFacade"
+             data-map-src="https://www.google.com/maps?q=Saloon%20Cadde%2C%2075.%20Y%C4%B1l%20Cumhuriyet%20Cad.%20No%3A56%2FB%2C%20Urla%2C%20%C4%B0zmir&output=embed">
+          <div>
+            <svg class="pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-5.6-7-11a7 7 0 0 1 14 0c0 5.4-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>
+            <strong>Saloon Cadde</strong>
+            <span class="loc">Yelaltı Mah. 75. Yıl Cumhuriyet Cad. No:56/B, Urla / İzmir</span>
+            <div><button class="btn btn-primary" id="loadMap" type="button">Haritayı Göster</button></div>
+            <a class="map-open-link" href="https://www.google.com/maps/search/?api=1&query=Saloon+Cadde+75.+Y%C4%B1l+Cumhuriyet+Cad.+No%3A56%2FB+Urla+%C4%B0zmir" target="_blank" rel="noopener">Google Maps'te aç ↗</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================ FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div>
+          <a href="#hero" class="logo">
+            <svg class="cadde-face" viewBox="0 0 120 132" fill="none" stroke="currentColor" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M48 14 C 86 6 112 34 96 62 C 120 80 102 122 70 128"/>
+              <path d="M53 28 C 82 22 98 44 86 64 C 100 80 90 106 70 113"/>
+              <path d="M61 30 C 51 40 50 53 57 60 C 50 62 50 70 57 72 C 53 78 59 83 68 80"/>
+            </svg>
+            <span class="lk"><span class="scr">Saloon</span><span class="cadde">Cadde</span></span>
+          </a>
+          <p style="margin-top:16px;">Urla merkezde gelin saçı &amp; makyajı, saç bakımı, tırnak ve güzellik hizmetleri. Kişiye özel, hijyenik ve profesyonel.</p>
+        </div>
+        <div>
+          <h5>Menü</h5>
+          <ul>
+            <li><a href="#services">Hizmetler</a></li>
+            <li><a href="#bridal">Gelin Paketi</a></li>
+            <li><a href="#pricing">Fiyatlar</a></li>
+            <li><a href="#gallery">Galeri</a></li>
+            <li><a href="#faq">Sık Sorulanlar</a></li>
+          </ul>
+        </div>
+        <div>
+          <h5>İletişim</h5>
+          <ul>
+            <li><a href="#" data-wa>WhatsApp Randevu</a></li>
+            <li><a href="tel:+905062817311" data-phone>+90 506 281 73 11</a></li>
+            <li><a href="https://instagram.com/saloon.cadde" target="_blank" rel="noopener" data-instagram>@saloon.cadde</a></li>
+            <li>Yelaltı Mah., Urla / İzmir</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span id="year"></span> Saloon Cadde. Tüm hakları saklıdır.</span>
+        <span>Urla · İzmir — Gelin &amp; Güzellik Salonu</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp -->
+  <a href="#" class="wa-float" data-wa aria-label="WhatsApp'tan randevu al">
+    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38c1.45.79 3.08 1.21 4.79 1.21 5.46 0 9.91-4.45 9.91-9.91S17.5 2 12.04 2zm5.8 14.16c-.24.68-1.42 1.32-1.96 1.36-.5.04-.95.21-3.2-.67-2.7-1.06-4.4-3.84-4.53-4.02-.13-.18-1.08-1.43-1.08-2.73s.68-1.94.92-2.2c.24-.27.53-.34.71-.34l.51.01c.16 0 .38-.06.6.46.24.56.79 1.94.86 2.08.07.13.12.29.02.47-.09.18-.14.29-.27.45l-.4.46c-.13.13-.27.28-.12.55.16.27.7 1.15 1.5 1.86 1.03.92 1.9 1.2 2.17 1.34.27.13.42.11.58-.07.16-.18.66-.77.84-1.04.18-.27.36-.22.6-.13.24.09 1.55.73 1.81.86.27.13.45.2.51.31.07.11.07.63-.17 1.32z"/></svg>
+  </a>
+
+  <script>
+  /* ============================================================
+     CONFIG — Gerçek bilgileri sadece burada değiştirin.
+     ============================================================ */
+  const CONFIG = {
+    whatsapp: "905062817311",
+    phoneDisplay: "+90 506 281 73 11",
+    phoneHref: "+905062817311",
+    instagram: "saloon.cadde",
+    defaultMessage: "Merhaba, Saloon Cadde'den randevu almak istiyorum."
+  };
+
+  (function(){
+    "use strict";
+
+    function waLink(msg){
+      const text = encodeURIComponent(msg || CONFIG.defaultMessage);
+      return "https://wa.me/" + CONFIG.whatsapp + "?text=" + text;
+    }
+    document.querySelectorAll("[data-wa]").forEach(function(el){
+      el.setAttribute("href", waLink(el.getAttribute("data-msg")));
+      el.setAttribute("target","_blank");
+      el.setAttribute("rel","noopener");
+    });
+    document.querySelectorAll("[data-phone]").forEach(function(el){
+      if(el.tagName === "A") el.setAttribute("href","tel:" + CONFIG.phoneHref);
+      const strong = el.querySelector("strong");
+      if(strong) strong.textContent = CONFIG.phoneDisplay;
+      else if(el.tagName === "A") el.textContent = CONFIG.phoneDisplay;
+    });
+    document.querySelectorAll("[data-instagram]").forEach(function(el){
+      el.setAttribute("href","https://instagram.com/" + CONFIG.instagram);
+    });
+
+    const y = document.getElementById("year"); if(y) y.textContent = new Date().getFullYear();
+
+    const header = document.getElementById("header");
+    const onScroll = function(){
+      if(window.scrollY > 20) header.classList.add("scrolled");
+      else header.classList.remove("scrolled");
+    };
+    onScroll(); window.addEventListener("scroll", onScroll, { passive:true });
+
+    const burger = document.getElementById("hamburger");
+    const menu = document.getElementById("mobileMenu");
+    const overlay = document.getElementById("overlay");
+    function setMenu(open){
+      menu.classList.toggle("open", open);
+      overlay.classList.toggle("open", open);
+      burger.classList.toggle("open", open);
+      burger.setAttribute("aria-expanded", open ? "true" : "false");
+      burger.setAttribute("aria-label", open ? "Menüyü kapat" : "Menüyü aç");
+      document.body.style.overflow = open ? "hidden" : "";
+    }
+    burger.addEventListener("click", function(){ setMenu(!menu.classList.contains("open")); });
+    overlay.addEventListener("click", function(){ setMenu(false); });
+    menu.querySelectorAll("a").forEach(function(a){ a.addEventListener("click", function(){ setMenu(false); }); });
+
+    const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    if(!reduce && "IntersectionObserver" in window){
+      const io = new IntersectionObserver(function(entries){
+        entries.forEach(function(e){
+          if(e.isIntersecting){ e.target.classList.add("in"); io.unobserve(e.target); }
+        });
+      }, { threshold:.14, rootMargin:"0px 0px -40px 0px" });
+      document.querySelectorAll(".reveal").forEach(function(el){ io.observe(el); });
+    } else {
+      document.querySelectorAll(".reveal").forEach(function(el){ el.classList.add("in"); });
+    }
+
+    function markLoaded(){ document.body.classList.add("loaded"); }
+    if(document.readyState === "loading") document.addEventListener("DOMContentLoaded", markLoaded);
+    else markLoaded();
+
+    document.querySelectorAll("[data-ba]").forEach(function(ba){
+      const before = ba.querySelector(".ba-before");
+      const handle = ba.querySelector("[data-handle]");
+      const range = ba.querySelector("input[type=range]");
+      function set(pct){
+        pct = Math.max(0, Math.min(100, pct));
+        before.style.clipPath = "inset(0 0 0 " + pct + "%)";
+        handle.style.left = pct + "%";
+        if(range && range.value != pct) range.value = pct;
+      }
+      set(50);
+      if(range){ range.addEventListener("input", function(){ set(parseFloat(range.value)); }); }
+
+      let dragging = false;
+      function pctFromEvent(clientX){
+        const r = ba.getBoundingClientRect();
+        return ((clientX - r.left) / r.width) * 100;
+      }
+      function down(e){ dragging = true; move(e); }
+      function move(e){
+        if(!dragging) return;
+        const x = e.touches ? e.touches[0].clientX : e.clientX;
+        set(pctFromEvent(x));
+      }
+      function up(){ dragging = false; }
+      ba.addEventListener("pointerdown", down);
+      window.addEventListener("pointermove", move);
+      window.addEventListener("pointerup", up);
+    });
+
+    document.querySelectorAll("[data-acc]").forEach(function(acc){
+      const items = acc.querySelectorAll(".acc-item");
+      items.forEach(function(item){
+        const q = item.querySelector(".acc-q");
+        const a = item.querySelector(".acc-a");
+        q.addEventListener("click", function(){
+          const isOpen = item.classList.contains("open");
+          items.forEach(function(it){
+            it.classList.remove("open");
+            it.querySelector(".acc-a").style.maxHeight = null;
+          });
+          if(!isOpen){
+            item.classList.add("open");
+            a.style.maxHeight = a.scrollHeight + "px";
+          }
+        });
+      });
+    });
+
+    const loadMapBtn = document.getElementById("loadMap");
+    const mapFacade = document.getElementById("mapFacade");
+    if(loadMapBtn && mapFacade){
+      loadMapBtn.addEventListener("click", function(){
+        const iframe = document.createElement("iframe");
+        iframe.setAttribute("title", "Saloon Cadde konumu — Urla / İzmir");
+        iframe.setAttribute("loading", "lazy");
+        iframe.setAttribute("referrerpolicy", "no-referrer-when-downgrade");
+        iframe.src = mapFacade.getAttribute("data-map-src");
+        mapFacade.replaceWith(iframe);
+      });
+    }
+
+    document.querySelectorAll("[data-quiz]").forEach(function(group){
+      const opts = group.querySelectorAll(".quiz-opt");
+      opts.forEach(function(opt){
+        opt.addEventListener("click", function(){
+          opts.forEach(function(o){ o.classList.remove("active"); });
+          opt.classList.add("active");
+        });
+      });
+    });
+
+  })();
+  </script>
+</body>
+</html>
